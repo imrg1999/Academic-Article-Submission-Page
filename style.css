@@ -11,7 +11,7 @@
     --black-color: #000;
     --primary-color: #8baab1;
     --secondary-color: #585858;
-    --button-color: #ff0e2af7;
+    --button-color: #517af4f7;
 
     /*font-size*/
     --font-size-s: 0.9rem;
@@ -51,13 +51,12 @@ ul{
 
 header{
     background-color: var(--primary-color);
-    position: fixed;
     width: 100%;
     z-index: 5;
 }
 
 main{
-    padding-top: 90px;
+    padding-top: 40px;
 }
 
 header .navbar{
@@ -116,3 +115,68 @@ header .navbar{
     padding-bottom: 10px;
 }
 
+
+.form-container {
+    max-width: 500px;
+    margin: 40px auto;
+    background-color: var(--white-color);
+    padding: 25px 30px;
+    border-radius: var(--border-radius-s);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.form-header h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--black-color);
+}
+
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+}
+
+#myForm label {
+    margin-top: 12px;
+    font-size: var(--font-size-n);
+    color: var(--black-color);
+}
+
+
+#myForm input,
+#myForm textarea {
+    margin-top: 6px;
+    padding: 10px;
+    font-size: var(--font-size-n);
+    border: 1px solid #ccc;
+    border-radius: var(--border-radius-s);
+    outline: none;
+}
+
+
+#myForm input:focus,
+#myForm textarea:focus {
+    border-color: var(--primary-color);
+}
+
+#myForm textarea {
+    resize: none;
+    height: 100px;
+}
+
+
+#submit-btn {
+    margin-top: 20px;
+    padding: 12px;
+    font-size: var(--font-size-m);
+    background-color: var(--button-color);
+    color: var(--white-color);
+    border-radius: var(--border-radius-m);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit-btn:hover {
+    background-color: var(--secondary-color);
+}
