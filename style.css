@@ -10,7 +10,7 @@
     --white-color: #fff;
     --black-color: #000;
     --primary-color: #8baab1;
-    --secondary-color: #64569d;
+    --secondary-color: #585858;
     --button-color: #ff0e2af7;
 
     /*font-size*/
@@ -54,6 +54,10 @@ header{
     position: fixed;
     width: 100%;
     z-index: 5;
+}
+
+main{
+    padding-top: 90px;
 }
 
 header .navbar{
