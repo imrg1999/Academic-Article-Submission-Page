@@ -4,6 +4,18 @@
     box-sizing: border-box;
 }
 
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
 
 :root{
     /*colors*/
@@ -316,4 +328,65 @@ header .navbar{
     font-size: var(--font-size-n);
     line-height: 1.7;
     color: var(--black-color);
+}
+
+
+.service-section {
+    padding: 80px 20px;
+    background-color: #f5f7fa;
+}
+
+.service-content {
+    max-width: var(--site-max-width);
+    margin: 0 auto;
+}
+
+.service-list {
+    list-style: none;
+    text-align: center;
+}
+
+
+.service-list .name {
+    font-size: var(--font-size-xl);
+    color: var(--black-color);
+    margin-bottom: 10px;
+}
+
+.service-list .text {
+    font-size: var(--font-size-n);
+    color: var(--black-color);
+    margin-bottom: 40px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+
+.service-item {
+    display: flex;
+    justify-content: center;
+}
+
+.service-image {
+    max-width: 100%;
+    width: 500px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 20px 10px;
+    font-size: var(--font-size-s);
+}
+
+footer p {
+    margin: 0;
+    letter-spacing: 0.5px;
 }
