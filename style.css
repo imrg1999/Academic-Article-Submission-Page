@@ -390,3 +390,73 @@ footer p {
     margin: 0;
     letter-spacing: 0.5px;
 }
+
+.publication-section {
+    max-width: 1000px;
+    margin: 60px auto;
+    padding: 50px;
+    background: var(--white-color);
+    border-radius: var(--border-radius-m);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+.publication-title {
+    font-size: var(--font-size-l);
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.publish-subtitle {
+    text-align: center;
+    margin-bottom: 30px;
+    color: var(--black-color);
+}
+
+.publish-form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.publish-form input,
+.publish-form textarea,
+.publish-form select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.publish-buttons {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+}
+
+.publish-buttons button {
+    padding: 12px 25px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+
+#previewBtn {
+    background-color: #585858;
+    color: white;
+}
+
+button[type="submit"] {
+    background-color: #517af4f7;
+    color: white;
+}
+
+.preview-box {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 2px solid #ddd;
+}
+
+.hidden {
+    display: none;
+}

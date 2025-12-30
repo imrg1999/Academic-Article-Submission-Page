@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Publication Page</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="Index.html" class="navbar-logo">
+                <h2 class="navbar-text">🕮 STEM ARTICLES</h2>
+            </a>
+            <ul class="navbar-menu">
+                <li class="navbar-item">
+                    <a href="about.html" class="navbar-link">About</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="contact.html" class="navbar-link">Contact Us</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="Index.html" class="navbar-link">Home</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="service.html" class="navbar-link">Services</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="publish.html" class="navbar-link">Publication</a>
+                </li>
+                <li class="navbar-item">
+                    <a href="signup.html" class="navbar-link">
+                    Sign Up</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    
+<main class="publication-section">
+    <h2 class="publication-title"><u>Academic Article Submission Page</u></h2>
+
+    <form id="publishForm" class="publish-form">
+        <label>Article Title:</label>
+        <input type="text" id="title">
+
+        <label>Author Name:</label>
+        <input type="text" id="author">
+
+        <label>Email Id:</label>
+        <input type="email" id="email">
+
+        <label>Content Type:</label>
+        <select id="category">
+            <option value="">Select Category</option>
+            <option>Computer Science</option>
+            <option>Engineering</option>
+            <option>Mathematics</option>
+            <option>Medical Science</option>
+            <option>Biological Sciences</option>
+            <option>Humanities</option>
+        </select>
+
+        <label>Abstract:</label>
+        <textarea id="abstract" rows="4"></textarea>
+
+        <label>Full Article:</label>
+        <textarea id="content" rows="8"></textarea>
+
+        <div class="publish-buttons">
+            <button type="button" id="previewBtn">Preview Button</button>
+            <button type="submit">Submit Button</button>
+        </div>
+    </form>
+
+    <section id="previewBox" class="preview-box hidden">
+        <h3>Preview</h3>
+        <h4 id="pubTitle"></h4>
+        <p><strong>Author:</strong> <span id="pubAuthor"></span></p>
+        <p><strong>Category:</strong> <span id="pubCategory"></span></p>
+        <h5>Abstract</h5>
+        <p id="pubAbstract"></p>
+        <h5>Content</h5>
+        <p id="pubContent"></p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Rupankar. Built by Rupankar</p>
+</footer>
+
+<script src="publish.js"></script>
+</body>
+</html>
